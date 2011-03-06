@@ -1,0 +1,25 @@
+{
+	"name":"OtoMoto.pl Chrome Extension"
+	,"version":"0.1"
+	,"description":"Hides unwanted makes from a list, brought to you by Grzegorz Blaszczyk Consulting."
+	,"permissions":[
+		"http://otomoto.pl/*"
+		,"tabs"
+	]
+	//,"background_page":"background.html"
+	,"content_scripts":[
+		{
+			"matches":["http://otomoto.pl/index.php*"]
+			, "js":["jquery-1.4.4.min.js","annotate.js"]
+			, "css":["flat.css"]
+			, "run_at": "document_end"
+		}
+	]
+	,"page_action":{
+		"default_icon":"icon.png"
+		,"default_title":"Otomoto.pl - blokada"
+	}
+	,"icons": {
+		"128": "icon.png"
+	}
+}

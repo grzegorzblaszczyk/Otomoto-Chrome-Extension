@@ -4,8 +4,8 @@ A fast Chrome extension for otomoto.pl to filter out unwanted make from a list.
 
 ## TODO
 
-1. write a JQuery selector
-2. set up a chrome extension architecture
+-[1. write a JQuery selector]
+-[2. set up a chrome extension architecture]
 3. set up options.html (a manager to modify unwanted makes)
 4. package an extension
 5. publish it!
